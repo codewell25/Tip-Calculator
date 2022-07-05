@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="CSS/index.css">
+
+
+    <style>
+        .f {
+            background: hsl(183, 100%, 15%);
+            background: hsl(186, 14%, 43%);
+            background: hsl(184, 14%, 56%);
+            background: hsl(185, 41%, 84%);
+            background: hsl(189, 41%, 97%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <h1 class="text-center mb-5">Spliter</h1>
+
+        <div class="cal-wrapper">
+
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <div class="col-sm-6 input-sec">
+
+                        <!-- Input section -->
+                        <div class="input-amount">
+                            <p>Bill</p>
+                            <input type="number" placeholder="0" id="bill-amount">
+                        </div>
+
+                        <!-- Tip Section -->
+                        <div class="tip-percentage my-4">
+                            <p>Select Tip %</p>
+
+                            <div class="row my-3">
+                                <div class="col-4">
+                                    <button onclick="tipPercent(5)" class="tip-btn">5%</button>
+                                </div>
+
+                                <div class="col-4">
+                                    <button onclick="tipPercent(10)" class="tip-btn">10%</button>
+                                </div>
+
+                                <div class="col-4">
+                                    <button onclick="tipPercent(15)" class="tip-btn">15%</button>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <button onclick="tipPercent(25)" class="tip-btn">25%</button>
+                                </div>
+
+                                <div class="col-4">
+                                    <button onclick="tipPercent(50)" class="tip-btn">50%</button>
+                                </div>
+
+                                <div class="col-4 custom-tip">
+                                    <input type="number" placeholder="Custom" id="custom-tip">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- NO. pf people -->
+                        <div class="num-people my-2">
+
+                            <p>
+                                Number of People <span id="warning"></span>
+                            </p>
+
+                            <input type="number" class="input-red my-2" id="num-people">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-6 output-sec-wrapper">
+
+                        <div class="output-sec">
+
+                            <div class="tip-amount ">
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>
+                                            Tip Amount <br>
+                                            <span class="output-small-text">/Person</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-6 text-center" id="tip-amount">
+                                        $0.00
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>
+                                            Total <br>
+                                            <span class="output-small-text">/Person</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-6 text-center" id="total-person">
+                                        $0.00
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 reset-btn ">
+                                        <button id="reset-btn">
+                                            RESET
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>

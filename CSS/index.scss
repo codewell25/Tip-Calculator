@@ -1,0 +1,206 @@
+body {
+    background: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+
+.main-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+
+    h1 {
+        color: hsl(183, 100%, 15%);
+        font-size: 50px;
+    }
+
+    .imp-notice {
+        color: red;
+        text-align: center;
+        font-size: 13px;
+        margin: 20px 0;
+    }
+}
+
+.cal-wrapper {
+
+    background-color: white;
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 15px;
+}
+
+.input-amount {
+    position: relative;
+
+    P {
+        margin: 0;
+        color: hsl(186, 14%, 43%);
+        letter-spacing: 1.5px;
+    }
+
+    &::after {
+        content: '$';
+        position: absolute;
+        left: 10px;
+        bottom: 8px;
+        color: hsl(184, 14%, 56%);
+    }
+
+    input {
+        text-align: end;
+        height: 40px;
+        width: 100%;
+        border: 1px solid #26C0AA;
+        border-radius: 5px;
+        background-color: hsl(189, 41%, 97%);
+    }
+
+}
+
+:focus {
+    outline: 1px solid #26C0AA;
+}
+
+.tip-percentage {
+
+    P {
+        margin: 0;
+        color: hsl(186, 14%, 43%);
+        letter-spacing: 1.5px;
+    }
+
+    button {
+        width: 100%;
+        background-color: hsl(183, 100%, 15%);
+        color: white;
+        border: none;
+        height: 35px;
+        font-weight: bold;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: hsl(185, 41%, 84%);
+            color: hsl(183, 100%, 15%);
+        }
+    }
+
+}
+
+
+.custom-tip {
+
+    input {
+        width: 100%;
+        height: 35px;
+        border: 1px solid #26C0AA;
+        border-radius: 5px;
+        background-color: hsl(189, 41%, 97%);
+        padding-left: 3px;
+    }
+
+    ::placeholder {
+        font-size: 12px;
+    }
+}
+
+
+.num-people {
+    position: relative;
+
+    P {
+        margin: 0;
+        color: hsl(186, 14%, 43%);
+        letter-spacing: 1.5px;
+    }
+
+    &::before {
+        content: '';
+        background-image: url(../images/icon-person.svg);
+        height: 15px;
+        width: 15px;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+    }
+
+    input {
+        height: 40px;
+        width: 100%;
+        border: 1px solid #26C0AA;
+        background-color: hsl(189, 41%, 97%);
+        border-radius: 5px;
+        text-align: right;
+    }
+}
+
+.output-sec {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: hsl(183, 100%, 15%);
+    padding: 25px;
+
+    P {
+        color: white;
+    }
+}
+
+.output-small-text {
+    font-size: 12px;
+    color: hsl(185, 41%, 84%);
+}
+
+#tip-amount,
+#total-person {
+    font-size: 20px;
+    color: #26C0AA;
+    font-weight: bold;
+}
+
+.reset-btn {
+    height: 100%;
+    margin-top: 110px;
+
+    button {
+        height: 45px;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        background-color: hsl(185, 41%, 84%);
+        color: hsl(183, 100%, 15%);
+    }
+}
+
+#warning {
+    font-size: 10px;
+    color: red;
+    margin-left: 25px;
+}
+
+@media(min-width:769px) and (max-width:1020px) {
+    .main-wrapper {
+        width: 90%;
+    }
+
+}
+
+@media(max-width:768px) {
+    .main-wrapper {
+        width: 100%;
+
+        h1 {
+            margin-top: 200px;
+        }
+    }
+
+    .output-sec-wrapper {
+        margin-top: 20px;
+    }
+
+    .reset-btn {
+        margin-top: 10px;
+    }
+}

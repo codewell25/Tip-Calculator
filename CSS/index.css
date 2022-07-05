@@ -1,0 +1,205 @@
+body {
+  background: #c5e4e7;
+  font-family: 'Space Mono', monospace;
+}
+
+.main-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.main-wrapper h1 {
+  color: #00494d;
+  font-size: 50px;
+}
+
+.main-wrapper .imp-notice {
+  color: red;
+  text-align: center;
+  font-size: 13px;
+  margin: 20px 0;
+}
+
+.cal-wrapper {
+  background-color: white;
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 15px;
+}
+
+.input-amount {
+  position: relative;
+}
+
+.input-amount P {
+  margin: 0;
+  color: #5e7a7d;
+  letter-spacing: 1.5px;
+}
+
+.input-amount::after {
+  content: '$';
+  position: absolute;
+  left: 10px;
+  bottom: 8px;
+  color: #7f9c9f;
+}
+
+.input-amount input {
+  text-align: end;
+  height: 40px;
+  width: 100%;
+  border: 1px solid #26C0AA;
+  border-radius: 5px;
+  background-color: #f4fafa;
+}
+
+:focus {
+  outline: 1px solid #26C0AA;
+}
+
+.tip-percentage P {
+  margin: 0;
+  color: #5e7a7d;
+  letter-spacing: 1.5px;
+}
+
+.tip-percentage button {
+  width: 100%;
+  background-color: #00494d;
+  color: white;
+  border: none;
+  height: 35px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.tip-percentage button:hover {
+  background-color: #c5e4e7;
+  color: #00494d;
+}
+
+.custom-tip input {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #26C0AA;
+  border-radius: 5px;
+  background-color: #f4fafa;
+  padding-left: 3px;
+}
+
+.custom-tip ::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+.custom-tip :-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.custom-tip ::-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.custom-tip ::placeholder {
+  font-size: 12px;
+}
+
+.num-people {
+  position: relative;
+}
+
+.num-people P {
+  margin: 0;
+  color: #5e7a7d;
+  letter-spacing: 1.5px;
+}
+
+.num-people::before {
+  content: '';
+  background-image: url(../images/icon-person.svg);
+  height: 15px;
+  width: 15px;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+}
+
+.num-people input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #26C0AA;
+  background-color: #f4fafa;
+  border-radius: 5px;
+  text-align: right;
+}
+
+.output-sec {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: #00494d;
+  padding: 25px;
+}
+
+.output-sec P {
+  color: white;
+}
+
+.output-small-text {
+  font-size: 12px;
+  color: #c5e4e7;
+}
+
+#tip-amount,
+#total-person {
+  font-size: 20px;
+  color: #26C0AA;
+  font-weight: bold;
+}
+
+.reset-btn {
+  height: 100%;
+  margin-top: 110px;
+}
+
+.reset-btn button {
+  height: 45px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #c5e4e7;
+  color: #00494d;
+}
+
+#warning {
+  font-size: 10px;
+  color: red;
+  margin-left: 25px;
+}
+
+@media (min-width: 769px) and (max-width: 1020px) {
+  .main-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-wrapper {
+    width: 100%;
+  }
+  .main-wrapper h1 {
+    margin-top: 200px;
+  }
+  .output-sec-wrapper {
+    margin-top: 20px;
+  }
+  .reset-btn {
+    margin-top: 10px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
